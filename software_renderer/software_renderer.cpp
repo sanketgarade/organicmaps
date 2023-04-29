@@ -341,6 +341,9 @@ void SoftwareRenderer::DrawArea(AreaInfo const & geometry, BrushInfo const & inf
   }
 }
 
+// sanket - these 2 methods are probably run to render the text
+// first one works only on primary font and primary text
+// second one works on both primary and secondary font and primary and secondary text
 void SoftwareRenderer::DrawText(m2::PointD const & pt, dp::Anchor anchor, dp::FontDecl const & primFont, strings::UniString const & primText)
 {
   //@TODO (yershov) implement it
